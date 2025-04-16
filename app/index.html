@@ -118,8 +118,10 @@
         <form id="subscribe" class="feedback" action="/contact_page.php" target="_self">
           <fieldset><div class="fieldset">
             <legend></legend>
+
             <label id="name-label" for="name">Твоє&nbsp;Ім'я:&nbsp;
               <input id="name" name="name" type="text" placeholder="Твоє Ім'я" required />
+              <div class="error" data-error="поле Ваше ім'я не може бути порожнім" ></div>
             </label>
             <br/>
             <label id="email-label" for="email">Мейл:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
