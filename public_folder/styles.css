@@ -296,7 +296,8 @@ label{
 }
 #name-label,
 #email-label,
-#number-label {
+#number-label
+{
   font-size: 18px!important;
   width:50px;
   margin-top: 11px;
@@ -316,12 +317,25 @@ fieldset{
     border-radius: 4px;
     font-size: 14px;
     color: #000;
-    padding-top: 16px;
-  margin-top: -10px;
+
 }
 #name-label{
   width: 500px!important;
 }
+input:focus:invalid~.error::after {
+  position: absolute;
+  z-index: 99;
+  content: attr(data-error);
+  top:230px;
+  left:50px;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 500;
+  width: 500px;
+  padding: 8px;
+  color: red;
+}
+
 /* chess section */
 .chess-section {
   display: flex;
