@@ -15,8 +15,7 @@
   <div class="warning-banner" id="dataWarning">
     Ми використовуємо файли cookie та дані для покращення вашого досвіду, аналізу трафіку та з метою безпеки.
     <button onclick="document.getElementById('dataWarning').style.display='none'">Зрозуміло</button>
-    <button onclick="document.getElementById('dataWarning').style.display='none'">Прийняти</button>
-    <button onclick="document.getElementById('dataWarning').style.display='none'">Не прийняти</button>
+    <button onclick="document.getElementById('dataWarning').style.display='none'">Скасувати</button>
   </div>
 
   <nav id='menu'>
@@ -50,7 +49,7 @@
   <section id="youtube" class="parallax-section variety">
     <div class="content">
       <h2>Долучайся до ЮТЮБ каналу</h2>
-      <p>From storage to shipping, we’ve got you covered.</p>
+      <p>ласкаво просимо в наші відеоблоги</p>
       <div class="youtube">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/SNdDaZsePyI?si=NqdKpgwDsZGJGzFz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <img class="youtube" src="./img/start-video-btn.png" alt="start video button" height="64px" width="64px">
@@ -72,7 +71,7 @@
     <div class="content">
       <h2>Наша локація</h2>
       <p>Заїджайте щоб подивитись новінки!</p>
-      <iframe width="300" height="300" src="https://maps.app.goo.gl/1FGAC23iCjq2QnyK6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="440" height="300" src="https://maps.app.goo.gl/1FGAC23iCjq2QnyK6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <button class="red-btn">Замовити</button>
     </div>
   </section>
@@ -119,8 +118,10 @@
         <form id="subscribe" class="feedback" action="/contact_page.php" target="_self">
           <fieldset><div class="fieldset">
             <legend></legend>
+
             <label id="name-label" for="name">Твоє&nbsp;Ім'я:&nbsp;
               <input id="name" name="name" type="text" placeholder="Твоє Ім'я" required />
+              <div class="error" data-error="поле Ваше ім'я не може бути порожнім" ></div>
             </label>
             <br/>
             <label id="email-label" for="email">Мейл:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
